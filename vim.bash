@@ -16,33 +16,43 @@ if ! which wget >/dev/null; then
 	sudo apt-get install wget
 fi
 
-sudo wget ftp://ftp.vim.org/pub/vim/unix/vim-7.3.tar.bz2
-tar -xzf vim-7.3.tar.bz2
+wget ftp://ftp.vim.org/pub/vim/unix/vim-7.3.tar.bz2
+tar jxvf vim-7.3.tar.bz2
 cd vim73/src/
 ./configure
 make
 sudo make install
 sudo make install clean
+cd ../../
+rm -rf vim73/
+rm vim-7.3.tar.bz2
 
 #install gvim
-cd vim73/src/
-make distclean
-./configure --with-features=huge --enable-gui=gnome2
-make
-sudo make install
+#cd vim73/src/
+#make distclean
+#./configure --with-features=huge --enable-gui=gnome2
+#make
+#sudo make install
 
 mkdir ~/.vim
-cd ~/.vim
 
 #file navigator
 sudo wget http://www.vim.org/scripts/download_script.php?src_id=11834
 unzip  download_script.php?src_id=11834 -d ~/.vim
+sudo rm download_script.php\?src_id\=11834
 
+#code snippet
 sudo wget http://www.vim.org/scripts/download_script.php?src_id=11006
 unzip download_script.php?src_id=11006 -d ~/.vim
+sudo rm download_script.php\?src_id\=11006
 
+#store snippet
+sudo snippet/javascript.snippets ~/.vim
+
+#code comment
 sudo wget http://www.vim.org/scripts/download_script.php?src_id=9801
 mv download_script.php?src_id=9801 ~/.vim/plugin/comment.vim
 
 #store .vimrc
 sudo cp .vimrc ~/
+
