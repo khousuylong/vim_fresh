@@ -43,3 +43,6 @@ unzip download_script.php?src_id=11006 -d ~/.vim
 
 sudo wget http://www.vim.org/scripts/download_script.php?src_id=9801
 mv download_script.php?src_id=9801 ~/.vim/plugin/comment.vim
+
+#store .vimrc
+sudo cp .vimrc ~/
