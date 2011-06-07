@@ -56,6 +56,16 @@ sudo cp snippets/javascript.snippets ~/.vim
 sudo wget http://www.vim.org/scripts/download_script.php?src_id=9801
 sudo mv download_script.php?src_id=9801 ~/.vim/plugin/comment.vim
 
+#l9 library is needed before fuzzy finder could be installed and use
+sudo wget http://www.vim.org/scripts/download_script.php?src_id=13948
+sudo unzip download_script.php?src_id=13948 -d ~/.vim
+sudo rm download_script.php?src_id=13948
+
+#fuzzy finder
+sudo wget http://www.vim.org/scripts/download_script.php?src_id=13961
+sudo unzip download_script.php?src_id=13961 -d ~/.vim
+sudo rm download_script.php\?src_id\=13961
+
 #store .vimrc
 sudo cp .vimrc ~/
 

@@ -9,3 +9,4 @@ set shiftwidth=4
 map <S-w> :w
 map <S-q> :q
 map <S-s> :wq
+map <S-f> :FufFile
