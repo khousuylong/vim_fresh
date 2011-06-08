@@ -50,7 +50,7 @@ sudo unzip download_script.php?src_id=11006 -d ~/.vim
 sudo rm download_script.php\?src_id\=11006
 
 #store snippet
-sudo cp snippets/javascript.snippets ~/.vim
+sudo cp snippets/javascript.snippets ~/.vim/snippets/
 
 #code comment
 sudo wget http://www.vim.org/scripts/download_script.php?src_id=9801
