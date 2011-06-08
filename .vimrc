@@ -10,3 +10,5 @@ map <S-w> :w
 map <S-q> :q
 map <S-s> :wq
 map <S-f> :FufFile
+map <S-y> <S-"><S-+>y
+map <S-p> <S-"><S-+>p
