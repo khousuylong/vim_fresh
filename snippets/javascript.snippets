@@ -1,12 +1,12 @@
 #bracket
-snippet b
-	(${1})
+snippet (
+	(${1})${2}
 #curly bracket
-snippet cb
-	{${1}}
+snippet {
+	{${1}}${2}
 #square bracket
-snippet sb
-	[${1}]
+snippet [
+	[${1}]${2}
 
 # Prototype
 snippet proto
@@ -120,3 +120,10 @@ snippet '
 #double quaot
 snippet "
 	"${1}"${2}
+#dom builder
+snippet dombuild
+	YK.domBuilder.create({"tag": "${1}","className": "${2}", "append": ${3}});
+snippet domevent
+	YK.Event.addDomListener(${1}, "${2}", function(e){
+		${3}
+	});

@@ -66,6 +66,9 @@ sudo wget http://www.vim.org/scripts/download_script.php?src_id=13961
 sudo unzip download_script.php?src_id=13961 -d ~/.vim
 sudo rm download_script.php\?src_id\=13961
 
+#copy colors
+cp /colors/ .vim ~/.vim/colors/
+
 #store .vimrc
 sudo cp .vimrc ~/
 
