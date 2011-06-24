@@ -35,3 +35,5 @@ set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bark
 set guioptions-=L  "remove right-hand scroll bark
+filetype plugin indent on
+autocmd FileType ruby setlocal expandtab shiftwidth=2 softtabstop=2
